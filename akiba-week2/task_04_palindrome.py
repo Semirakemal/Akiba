@@ -2,9 +2,10 @@ word = input("enter the word ")
 
 reverse = ""
 
-for words in word :
-  word = reverse + words
-  if word == reverse:
+for i in range(len(word) -1,-1,-1) :
+  reverse += word[i]
+
+if word == reverse:
     print("palindrome")
-  else:
+else:
     print("not palindrome")
