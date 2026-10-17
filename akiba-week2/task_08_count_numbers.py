@@ -5,15 +5,15 @@ odd = 0
 
 i = 1
 while i <= n:
-    total += i
-    if i % 2 == 0:
-       print("even =", even )
-       even += 1
+   total += i
+   i += 1
 
-    else:
+   if i % 2 == 0:
+      even += 1
+   if i % 2 == 1:
       odd += 1
-      print("odd", odd)
-    i += 1
+      
    
-
+print("odd", odd)
+print("even =", even )   
 print(total)
